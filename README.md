@@ -8,8 +8,9 @@ This project has two parts:
 1. Wireless communication using 802.11a WLAN 
 2. Image Processing for forgery detection
 
+**************************************************************
 
-1. Wireless communication using 802.11a WLAN:
+Wireless communication using 802.11a WLAN:
 
 The wireless communication part of the project shows how to encode and pack an image file into WLAN packets for transmission and subsequently decode the packets 
 to retrieve the image. To facilitate the wireless communictation we used two adalm pluto sdr radios for transmission and reception of the waveform. 
@@ -30,9 +31,9 @@ Raspberry Pi. Then, the Raspberry Pi performs the image forgery detection and se
 
 For further pictorial desctripton, please refer to flow_chart located in the "Additional Documentation folder" 
 
+**************************************************************
 
-
-2. Image Processing for forgery detection:
+Image Processing for forgery detection:
 
 The use of the Raspberry Pi is to process the image and Identify whether the image is forged or not. We used a scale invarient feature transform (SIFT)
 algorithm inorder to detect the image features and key-point descriptors. 
@@ -56,7 +57,7 @@ The Python code that was used in this projects performs the the following SIFT a
 5. Feature Matching
 
 
-  
-    
+      
 Reference:
-https://www.mathworks.com/help/wlan/ug/image-transmission-reception-using-802-11-waveform-sdr.html
+MATLAB: Image Transmission and Reception Using 802.11 Waveform and SDR
+
