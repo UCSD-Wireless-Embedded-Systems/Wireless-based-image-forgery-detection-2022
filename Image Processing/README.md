@@ -16,21 +16,26 @@ Its process divided into the following steps:
 3. Orientation Assignment: Ensure the keypoints are rotation invariant
 4. Keypoint Descriptor: Assign a unique fingerprint to each keypoint
 
+Basic Block Diagram:                                                                                                                                                  
 
-Python Script:
+![alt text](/Images/blocks.jpg)
+
+************************************
+Python Script:                                                                                                                                                     
 "Image Processing" folder contains the image forgery detection python script. In addition, it has a client and server Python scripts for image transmission between
 a remote computer (comp2) and Raspberry Pi. 
 
-
-Basic Block Diagram:
-
- ___________        ___________          ____________
-|           |      |           |        |            |
-| Comp1 (Tx)|----->|Comp2 (Rx) | -----> |Raspberry Pi|
-|___________|      |___________|        |____________|
-
-Note: The complete block diagram can be found in the "Additional Documentation" folder one level up from here. Also, the wireless communication part is explained in
+Note: The complete block diagram can be found on the main page README file. Also, the wireless communication part is explained in
 the "Wireless Communication" folder one level up from here. This readme file only focuses on the Image processing on the Raspberry Pi. 
 
+TEST RESULT
+************************************
 ![alt text](/Images/Test1.jpg)
-
+************************************
+![alt text](/Images/Test2.jpg)
+************************************
+![alt text](/Images/Test3.jpg)
+************************************
+![alt text](/Images/Test4.jpg)
+************************************
+![alt text](/Images/Test5.jpg)
