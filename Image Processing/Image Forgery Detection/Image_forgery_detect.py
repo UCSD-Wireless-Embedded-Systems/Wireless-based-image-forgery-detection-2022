@@ -9,9 +9,9 @@ from scipy.stats import stats
 
 import socket
 
-localhost = '169.254.79.35'    #when using ethernet cable
-#localhost = '192.168.0.30'       #when using wifi
-port = 5678
+localhost = 'XXX.XXX.XX.XX'       #when using ethernet cable (IP address of the Raspberry Pi)
+#localhost = 'XXX.XXX.XX.XX'       #when using wifi (IP address of the Raspberry Pi)
+port = XXXX  #use any port between 1024 and 49151
 
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)  
 server.bind((localhost, port)) 
