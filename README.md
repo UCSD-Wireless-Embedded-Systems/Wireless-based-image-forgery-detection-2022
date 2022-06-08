@@ -1,5 +1,5 @@
 # Wireless-based-image-forgery-detection
-WES 207 - Capstone project. Repository for MATLAB and Python programming for wireless-based image forgery detection using SIFT algorithm
+WES 207 - Capstone project. Repository for MATLAB Python, and Vitis HLS programming for wireless-based image forgery detection using SIFT algorithm
 
 The objectives of this project are to: 
 1. Design an 802.11a wireless local area network (WLAN) communication in MATLAB for image transmission. 
