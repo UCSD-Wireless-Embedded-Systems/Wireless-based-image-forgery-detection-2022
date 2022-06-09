@@ -84,9 +84,13 @@ The results shown below are cuptured and processed using MATLAB script.
 ![alt text](/Images/packet.jpg)
 ***************************************
 
-Transmitted and Received image:
-![alt text](/Images/(1920x1223).jpg) ![alt text](/Images/(1920x1223).jpg)
+Transmitted image:
+![alt text](/Images/(1920x1223).jpg) 
 ***************************************
+Received image:
+![alt text](/Images/rx_image.jpg)
+***************************************
+
 Reference:         
 MIMO-OFDM Wireless Communications with MATLAB®, Yong Soo Cho; Jaekwon Kim; Won Young Yang; Chung G. Kang
 https://www.mathworks.com/help/wlan/software-defined-radio.html?s_tid=CRUX_lftnav: Image Transmission and Reception Using 802.11 Waveform and SDR
