@@ -51,15 +51,6 @@ The general structure of the WLAN transmitter can be described as follows:
 
 Receiver Design:
 
-The below 802.11 OFDM Packet is used during the Receiver design:- 
-
-![alt text](/Images/packet.jpg)
-
-L-STF - Legacy short traning field 
-L-LTF - Legacy long traning field
-L-SIG - Legacy signal 
-
-
 The general structure of the WLAN receiver can be described as follows:
 
 1. Capture the transmitted wave-packets using another "1 antenna" PlutoSDR 
@@ -70,6 +61,11 @@ The general structure of the WLAN receiver can be described as follows:
 6. Decode the received PSDU and check if the frame check sequence (FCS) passed for the PSDU.
 7. Order the decoded MSDUs based on the SequenceNumber property in the recovered MAC frame configuration object.
 8. Combine the decoded MSDUs from all the transmitted packets to form the received image
+
+The plot shown below is the received 802.11a WLAN packets:- 
+
+![alt text](/Images/packet.jpg)
+
 
 Usage:
 1. Download the Transmitter and Receiver MATLAB code. 
