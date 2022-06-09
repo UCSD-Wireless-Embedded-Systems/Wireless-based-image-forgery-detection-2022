@@ -15,7 +15,7 @@ These keypoints are scale & rotation invariant that can be used for various comp
 
 There are mainly four steps involved in SIFT algorithm
 
-1. Scale Space constrauction: To make sure that features are scale-independent
+1. Scale Space construction: To make sure that features are scale-independent
 2. Keypoint Localisation: Identifying the suitable features or keypoints
 3. Orientation Assignment: Ensure the keypoints are rotation invariant
 4. Keypoint Descriptor: Assign a unique fingerprint to each keypoint
@@ -40,7 +40,7 @@ Usage:
 1. Download "Image Processing" or Clone the "wireless-based-image-forgery-detection" folder to your local computer.
 2. Open the Image_forgery.py file
 3. Use your own copy-moved(forged) image or have one from the "Image" folder
-4. Plce it in the same folder with the "Image_forgery.py" file 
+4. Place it in the same folder with the "Image_forgery.py" file 
 5. Run the code
 6. The result should display with the copy-move part inside a blue squre (refer the results displayed below)
 
