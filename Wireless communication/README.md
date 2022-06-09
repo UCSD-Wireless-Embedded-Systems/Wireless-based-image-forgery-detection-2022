@@ -85,7 +85,7 @@ The results shown below are cuptured and processed using MATLAB script.
 ***************************************
 
 Transmitted and Received image:
-![alt text](/Images/(1920x1223).jpg)
+![alt text](/Images/(1920x1223).jpg) ![alt text](/Images/(1920x1223).jpg)
 ***************************************
 Reference:         
 MIMO-OFDM Wireless Communications with MATLAB®, Yong Soo Cho; Jaekwon Kim; Won Young Yang; Chung G. Kang
