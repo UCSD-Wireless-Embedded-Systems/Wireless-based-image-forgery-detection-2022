@@ -13,12 +13,14 @@ and Random Sample Consensus (RANSAC) algorithm to detect keypoints and remove wr
 SIFT is a feature detection algorithm in Computer Vision. it helps locate the local features in an image, commonly known as the ‘keypoints‘ of the image. 
 These keypoints are scale & rotation invariant that can be used for various computer vision applications, like image matching, object detection, scene detection, etc.
 
-Its process divided into the following steps:
+There are mainly four steps involved in SIFT algorithm
 
 1. Scale Space constrauction: To make sure that features are scale-independent
 2. Keypoint Localisation: Identifying the suitable features or keypoints
 3. Orientation Assignment: Ensure the keypoints are rotation invariant
 4. Keypoint Descriptor: Assign a unique fingerprint to each keypoint
+
+Additional information about SIFT can be found on David G. Lowe's paper. The information is listed in the "Reference" section.
 
 Basic Block Diagram:                                                                                                                                                  
 
@@ -62,9 +64,9 @@ Figures below are the resultant image in which forged part is accurately detecte
 ************************************
 
 Conclusion: 
-In the proposed work, a SIFT algorithm is implemented to detect the copy move forgery in digital images. Proposed algorithm is tested on various images of standard 
-dataset. simulation results show that the forged region is detected accurately by using the SIFT algorithm. 
+In the proposed work, a SIFT algorithm is implemented to detect the copy move forgery in digital images. Proposed algorithm is tested on various images. And, the results show that the forged region is detected accurately by using the SIFT algorithm. 
 
-Reference:                                                                                                                                                             
+Reference:                         
+David G. Lowe "Distinctive Image Features from Scale-Invariant Keypoints”, International Journal of Computer Vision
 Copy-Move Image Forgery Detection using Scale Invariant Feature Transform-  P. Parimala, Mrs. A. Naveena                                                               
 Image used from this link - https://pixabay.com/
