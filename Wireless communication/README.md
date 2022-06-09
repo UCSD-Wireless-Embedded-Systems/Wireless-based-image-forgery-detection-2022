@@ -14,10 +14,7 @@ Required Hardware and Software to design the wireless communicaion part in MATLA
 
 Basic Block Diagram:
 
- ___________        ___________          ____________
-|           |      |           |        |            |
-| Comp1 (Tx)|----->|Comp2 (Rx) | -----> |Raspberry Pi|
-|___________|      |___________|        |____________|
+![alt text](/Images/blocks.jpg)
 
 Note: The complete block diagram can be found in the "Additional Documentation" folder one level up from here.
 
@@ -55,10 +52,8 @@ The general structure of the WLAN transmitter can be described as follows:
 Receiver Design:
 
 The below 802.11 OFDM Packet is used during the Receiver design:- 
- ____________ ____________ ____________ ________________________
-|            |            |            |                        |
-|  L-STF     |   L-LTF    |   L-SIG    |         Data           |
-|____________|____________|____________|________________________|
+
+![alt text](/Images/packet.jpg)
 
 L-STF - Legacy short traning field 
 L-LTF - Legacy long traning field
