@@ -20,28 +20,29 @@ Basic Block Diagram:
 
 Note: The complete block diagram can be found on the main page README file one level up from here.
 ***************************************
-Complete system description:
+Complete system description:                                                                                                                                       
 First, the Image is loaded and transmitted from a local computer (comp1) using 802.11a WLN communication on a "1 antenna" plotosdr. And the remote compter receives 
 the transmitted image using another "1 antenna" pluto sdr. Once all the transmitted wave packets are received fully, then the MATLAB design reconstract and transmit 
 the image to the Raspberry Pi using TCP/IP network connection. Then, the Raspberry Pi performs the image forgery detection and send the result back to the remote 
 computer (comp2). 
+
+![alt text](/Images/flow_chart.jpg)
 
 1. From computer 1 to Computer 2 (using 802.11a WLAN)
 2. From computer 2 to Raspberry Pi (using TCP/IP socket programming)
 3. Perform Image forgery detection on a Raspberry Pi (using Python) 
 4. Send the processed image back to computer 2 (using TCP/IP socket programming)
 
-Note: Step 3 - the image forgery detection part described in the "Image processing" folder one level up from here. And, 
-Please refer the README file in the "image processing" folder for the copy-move detection process. Here, we are only discussing the wireless 
-communication part.
+Note: Please refer the README file in the "image processing" folder for the Image forgery detection process (step 3 above). 
+Here, we are only discussing the wireless communication part.
                 
 ***************************************
 The "Wireless communication" folder contains the transmitter and receiver MATLAB code that was used for this project. 
-In addition, inside the Receiver folder there are client and server python codes. These codes are used to create a TCP/IP connection protocol between the receiver computer 2 and Raspberry Pi. 
+In addition, inside the Receiver folder there are client and server python codes. These codes are used to create a TCP/IP connection protocol between computer 2 and Raspberry Pi. 
 
 
 ***************************************
-Transmitter Design:
+Transmitter Design steps:
 The general structure of the WLAN transmitter can be described as follows:
 
 1. Import an image from a local computer (comp1) and convert it to binary stream.
@@ -53,8 +54,7 @@ The general structure of the WLAN transmitter can be described as follows:
 7. Send the baseband data to the PlutoSDR hardware for upsampling and continuous transmission at the desired center frequency.
 
 
-Receiver Design:
-
+Receiver Design steps:
 The general structure of the WLAN receiver can be described as follows:
 
 1. Capture the transmitted wave-packets using another "1 antenna" PlutoSDR 
@@ -72,7 +72,7 @@ USAGE:
 2. Connect one plutoSDR with "1 antenna" for the transmitter and receiver computer
 3. Use your own image or have one from the "Image" folder with image size "1920 X 1223"
 4. Plce it in the same folder with the "Transmiter" folder
-5. Run the transmitter "Tx_Rev1.m" MATLAB script first, and
+5. Run the transmitter "Tx_Rev1.m" MATLAB script 
 6. Run the Receiver "Rx_Rev1.m" MATLAB script 
 7. The result should display the transmitted waveform, 64QAM constellation, and received image (refer the results displayed below)  
 ***************************************
