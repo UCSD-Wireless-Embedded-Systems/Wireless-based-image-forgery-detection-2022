@@ -1,12 +1,12 @@
 Hi!
 
-This an IEEE 802.11a Wireless Local Area Network (WLAN) communication for image transmission uing MATLAB
+This is an IEEE 802.11a Wireless Local Area Network (WLAN) communication for image transmission uing MATLAB
 
 The wireless communication part of the project shows how to encode and pack an image file into WLAN packets for transmission 
 and subsequently decode the packets to retrieve the image. To facilitate the wireless communictation we used two adalm pluto sdr radios for transmission 
 and reception of the waveform.
 
-Required Hardware and Software to design the wireless communicaion part in MATLAB:
+Required Hardware and Software to design and implement the wireless communicaion part in MATLAB:
 1. Communication toolbox
 2. ADALM PlutoSDR 
 3. Software communication toolbox support package for ADALM PlutoSDR
@@ -16,23 +16,23 @@ Basic Block Diagram:
 
 ![alt text](/Images/blocks.jpg)
 
-Note: The complete block diagram can be found in the "Additional Documentation" folder one level up from here.
+Note: The complete block diagram can be found on the main page README file one level up from here.
 
 Image Transmission flow:
-1. From computer 1 to Computer 2 (used 802.11a WLAN)
-2. From computer 2 to Raspberry Pi (used TCP/IP socket programming)
-3. Perform Image processing on a Raspberry Pi (used Python) 
-4. Send the processed image back to computer 1 (used TCP/IP socket programming)
+1. From computer 1 to Computer 2 (using 802.11a WLAN)
+2. From computer 2 to Raspberry Pi (using TCP/IP socket programming)
+3. Perform Image forgery detection on a Raspberry Pi (using Python) 
+4. Send the processed image back to computer 1 (using TCP/IP socket programming)
 
-Note: Step 3 - the image processing part described in the "Image processing" folder one level up from here. 
+Note: Step 3 - the image forgery detection part described in the "Image processing" folder one level up from here. 
                 
 
 The Wireless communication folder contains the transmitter and receiver MATLAB code that was used for this project. 
-In addition, inside the Receiver folder there are client and server python codes. These codes creates a TCP/IP socket between the receiver computer (comp2)
+In addition, inside the Receiver folder there are client and server python codes. These codes creates a TCP/IP connection between the receiver computer (comp2)
 and the Raspberry Pi. 
 
 Introduction:
-The Image is loaded and transmitted from a local computer (comp1) using 802.11a WLN communication on a "1 antenna" plotosdr. And the remote compter receives 
+First, the Image is loaded and transmitted from a local computer (comp1) using 802.11a WLN communication on a "1 antenna" plotosdr. And the remote compter receives 
 the transmitted image using another "1 antenna" pluto sdr. Once all the transmitted wave packets are received fully, then the MATLAB design reconstract and transmit 
 the image to the Raspberry Pi using TCP/IP network connection. Then, the Raspberry Pi performs the image forgery detection and send the result back to the remote 
 computer (comp2).
@@ -78,4 +78,5 @@ Usage:
 4. Run the Receive MATLAB script next 
 
 
-
+Reference:
+Image Transmission and Reception Using 802.11 Waveform and SDR https://www.mathworks.com/help/wlan/ug
