@@ -79,4 +79,4 @@ Usage:
 
 
 Reference:
-Image Transmission and Reception Using 802.11 Waveform and SDR https://www.mathworks.com/help/wlan/ug
+https://www.mathworks.com/help/wlan/software-defined-radio.html?s_tid=CRUX_lftnav: Image Transmission and Reception Using 802.11 Waveform and SDR
