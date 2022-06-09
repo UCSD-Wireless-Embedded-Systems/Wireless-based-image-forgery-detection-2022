@@ -61,3 +61,5 @@ Conclusion:
 In the proposed work, a SIFT algorithm is implemented to detect the copy move forgery in digital images. Proposed algorithm is tested on various images of standard 
 dataset. simulation results show that the forged region is detected accurately by using the SIFT algorithm. 
 
+Reference:
+Copy-Move Image Forgery Detection using Scale Invariant Feature Transform-  P. Parimala, Mrs. A. Naveena
