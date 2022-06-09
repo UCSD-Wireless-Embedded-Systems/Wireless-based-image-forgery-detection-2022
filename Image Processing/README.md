@@ -10,7 +10,7 @@ The image below shows the classification of Image forgery detection
 In this project, we desgin a copy-move image detection model in Python and implemented it on a Raspberry Pi. The model used a Scale Invarient Feature Transform (SIFT)
 and Random Sample Consensus (RANSAC) algorithm to detect keypoints and remove wrong matches.
 
-SIFT is a feature detection algorithm in Computer Vision. it helps locate the local features in an image, commonly known as the ‘keypoints‘ of the image. 
+SIFT is a feature detection algorithm in Computer Vision. It helps locate the local features in an image, commonly known as the ‘keypoints‘ of the image. 
 These keypoints are scale & rotation invariant that can be used for various computer vision applications, like image matching, object detection, scene detection, etc.
 
 There are mainly four steps involved in SIFT algorithm
