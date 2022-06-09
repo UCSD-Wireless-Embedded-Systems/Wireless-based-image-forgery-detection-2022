@@ -69,11 +69,11 @@ The general structure of the WLAN receiver can be described as follows:
 ***************************************
 USAGE:
 1. Download the "Wireless communication" folder or Clone the "wireless-based-image-forgery-detection" folder to your local computer 
-2. Connect one plutoSDR with "1 antenna" for each transmit and receive computer
+2. Connect one plutoSDR with "1 antenna" for the transmitter and receiver computer
 3. Use your own image or have one from the "Image" folder with image size "1920 X 1223"
 4. Plce it in the same folder with the "Transmiter" folder
 5. Run the transmitter "Tx_Rev1.m" MATLAB script first, and
-6. Run the Receive "Rx_Rev1.m" MATLAB script 
+6. Run the Receiver "Rx_Rev1.m" MATLAB script 
 7. The result should display the transmitted waveform, 64QAM constellation, and received image (refer the results displayed below)  
 ***************************************
 TEST RESULT: 
