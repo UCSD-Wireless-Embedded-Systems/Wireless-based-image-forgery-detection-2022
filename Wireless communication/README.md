@@ -3,7 +3,7 @@ Hi!
 This is an IEEE 802.11a Wireless Local Area Network (WLAN) communication for image transmission uing MATLAB
 
 The wireless communication part of the project shows how to encode and pack an image file into WLAN packets for transmission 
-and subsequently decode the packets to retrieve the image. To facilitate the wireless communictation we used two adalm pluto sdr radios for transmission 
+and subsequently decode the packets to retrieve the image. To facilitate the wireless communictation process we used two adalm pluto sdr radios for transmission 
 and reception of the waveform.
 
 The following lists are required to design and implement the wireless communicaion part in MATLAB:
@@ -69,17 +69,20 @@ The general structure of the WLAN receiver can be described as follows:
 ***************************************
 USAGE:
 1. Download the "Wireless communication" folder or Clone the "wireless-based-image-forgery-detection" folder to your local computer 
-2. Connect one plutoSDR with "1 antenna" for each transmit and receive computer
+2. Connect one plutoSDR with "1 antenna" for the transmitter and receiver computer
 3. Use your own image or have one from the "Image" folder with image size "1920 X 1223"
 4. Plce it in the same folder with the "Transmiter" folder
 5. Run the transmitter "Tx_Rev1.m" MATLAB script first, and
-6. Run the Receive "Rx_Rev1.m" MATLAB script 
+6. Run the Receiver "Rx_Rev1.m" MATLAB script 
 7. The result should display the transmitted waveform, 64QAM constellation, and received image (refer the results displayed below)  
 ***************************************
 TEST RESULT: 
 The results shown below are cuptured and processed using MATLAB script. 
 
+![alt text](/Images/waveform.jpg)
+***************************************
 ![alt text](/Images/packet.jpg)
+***************************************
 
 Reference:         
 MIMO-OFDM Wireless Communications with MATLAB®, Yong Soo Cho; Jaekwon Kim; Won Young Yang; Chung G. Kang
