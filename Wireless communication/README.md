@@ -94,5 +94,5 @@ Received image:
 
 Reference:         
 MIMO-OFDM Wireless Communications with MATLAB®, Yong Soo Cho; Jaekwon Kim; Won Young Yang; Chung G. Kang
-https://www.mathworks.com/help/wlan/software-defined-radio.html?s_tid=CRUX_lftnav: Image Transmission and Reception Using 802.11 Waveform and SDR
+https://www.mathworks.com/help/wlan/software-defined-radio.html?s_tid=CRUX_lftnav: Image Transmission and Reception Using 802.11 Waveform and SDR                      
 Image used from this link - https://pixabay.com/
