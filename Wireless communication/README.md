@@ -18,24 +18,26 @@ Basic Block Diagram:
 
 Note: The complete block diagram can be found on the main page README file one level up from here.
 
-Image Transmission flow:
+Complete system description:
+First, the Image is loaded and transmitted from a local computer (comp1) using 802.11a WLN communication on a "1 antenna" plotosdr. And the remote compter receives 
+the transmitted image using another "1 antenna" pluto sdr. Once all the transmitted wave packets are received fully, then the MATLAB design reconstract and transmit 
+the image to the Raspberry Pi using TCP/IP network connection. Then, the Raspberry Pi performs the image forgery detection and send the result back to the remote 
+computer (comp2). 
+
 1. From computer 1 to Computer 2 (using 802.11a WLAN)
 2. From computer 2 to Raspberry Pi (using TCP/IP socket programming)
 3. Perform Image forgery detection on a Raspberry Pi (using Python) 
 4. Send the processed image back to computer 2 (using TCP/IP socket programming)
 
-Note: Step 3 - the image forgery detection part described in the "Image processing" folder one level up from here. 
+Note: Step 3 - the image forgery detection part described in the "Image processing" folder one level up from here. And, 
+Please refer the README file in the "image processing" folder for the copy-move detection process. Here, we are only discussing the wireless 
+communication part.
                 
 
-The Wireless communication folder contains the transmitter and receiver MATLAB code that was used for this project. 
-In addition, inside the Receiver folder there are client and server python codes. These codes creates a TCP/IP connection between the receiver computer (comp2)
-and the Raspberry Pi. 
+The "Wireless communication" folder contains the transmitter and receiver MATLAB code that was used for this project. 
+In addition, inside the Receiver folder there are client and server python codes. These codes are used to create a TCP/IP connection protocol between the receiver computer 2 and Raspberry Pi. 
 
-Introduction:
-First, the Image is loaded and transmitted from a local computer (comp1) using 802.11a WLN communication on a "1 antenna" plotosdr. And the remote compter receives 
-the transmitted image using another "1 antenna" pluto sdr. Once all the transmitted wave packets are received fully, then the MATLAB design reconstract and transmit 
-the image to the Raspberry Pi using TCP/IP network connection. Then, the Raspberry Pi performs the image forgery detection and send the result back to the remote 
-computer (comp2).
+
 
 Transmitter Design:
 The general structure of the WLAN transmitter can be described as follows:
@@ -62,17 +64,20 @@ The general structure of the WLAN receiver can be described as follows:
 7. Order the decoded MSDUs based on the SequenceNumber property in the recovered MAC frame configuration object.
 8. Combine the decoded MSDUs from all the transmitted packets to form the received image
 
-The plot shown below is the received 802.11a WLAN packets:- 
+
+USAGE:
+1. Download the "Wireless communication" folder or Clone the "wireless-based-image-forgery-detection" folder to your local computer 
+2. Connect one plutoSDR with "1 antenna" for each transmit and receive computer
+3. Use your own image or have one from the "Image" folder with image size "1920 X 1223"
+4. Plce it in the same folder with the "Transmiter" folder
+5. Run the transmitter "Tx_Rev1.m" MATLAB script first, and
+6. Run the Receive "Rx_Rev1.m" MATLAB script 
+7. The result should display the transmitted waveform, 64QAM constellation, and received image (refer the results displayed below)  
+
+TEST RESULT: 
+The results shown below are cuptured and processed using MATLAB script. 
 
 ![alt text](/Images/packet.jpg)
-
-
-Usage:
-1. Download the Transmitter and Receiver MATLAB code. 
-2. Connect one plutoSDR for each transmit and receive computer
-3. Run the Transmit MATLAB script first 
-4. Run the Receive MATLAB script next 
-
 
 Reference:         
 MIMO-OFDM Wireless Communications with MATLAB®, Yong Soo Cho; Jaekwon Kim; Won Young Yang; Chung G. Kang
