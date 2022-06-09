@@ -1,7 +1,7 @@
 import socket
 
-localhost = '169.254.79.1'    #when using ethernet cable
-#localhost = '192.168.0.30'       #when using wifi
+localhost = 'XXX.XXX.XX.XX'    #when using ethernet cable - ip address of computer 2
+#localhost = 'XXX.XXX.XX.XX'       #when using wifi - ip address of computer 2
 port = 1234
 
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)  

@@ -24,19 +24,23 @@ Basic Block Diagram:
 
 ![alt text](/Images/blocks.jpg)
 
+Note: The complete block diagram can be found on the main page README file. Also, the wireless communication part is explained in
+the "Wireless Communication" folder one level up from here. This readme file only focuses on the Image processing on the Raspberry Pi. 
+
 ************************************
 Python Script:                                                                                                                                                     
 "Image Processing" folder contains the image forgery detection python script. In addition, it has a client and server Python scripts for image transmission between
 a remote computer (comp2) and Raspberry Pi. 
 
-Note: The complete block diagram can be found on the main page README file. Also, the wireless communication part is explained in
-the "Wireless Communication" folder one level up from here. This readme file only focuses on the Image processing on the Raspberry Pi. 
+
 
 Usage: 
-1. Download or Clone the Image Processing directry 
+1. Download "Image Processing" or Clone the "wireless-based-image-forgery-detection" folder to your local computer.
 2. Open the Image_forgery.py file
-3. Place a forged image in the same folder and run the code
-4. The result display with the copy-move part inside a blue squre 
+3. Use your own copy-moved(forged) image or have one from the "Image" folder
+4. Plce it in the same folder with the "Image_forgery.py" file 
+5. Run the code
+6. The result should display with the copy-move part inside a blue squre (refer the results displayed below)
 
 
 
@@ -61,3 +65,6 @@ Conclusion:
 In the proposed work, a SIFT algorithm is implemented to detect the copy move forgery in digital images. Proposed algorithm is tested on various images of standard 
 dataset. simulation results show that the forged region is detected accurately by using the SIFT algorithm. 
 
+Reference:                                                                                                                                                             
+Copy-Move Image Forgery Detection using Scale Invariant Feature Transform-  P. Parimala, Mrs. A. Naveena                                                               
+Image used from this link - https://pixabay.com/

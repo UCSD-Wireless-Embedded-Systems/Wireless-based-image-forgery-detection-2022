@@ -1,7 +1,7 @@
 import socket
 
-localhost = '169.254.79.35'    #when using ethernet cable
-#localhost = '192.168.0.30'       #when using wifi
+localhost = 'XXX.XXX.XX.XX'    #when using ethernet cable - IP address of Raspberry Pi
+#localhost = 'XXX.XXX.XX.XX'   #when using wifi - IP address of Raspberry Pi
 port = 1234
 
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)  
