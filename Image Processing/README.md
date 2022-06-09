@@ -10,15 +10,17 @@ The image below shows the classification of Image forgery detection
 In this project, we desgin a copy-move image detection model in Python and implemented it on a Raspberry Pi. The model used a Scale Invarient Feature Transform (SIFT)
 and Random Sample Consensus (RANSAC) algorithm to detect keypoints and remove wrong matches.
 
-SIFT is a feature detection algorithm in Computer Vision. it helps locate the local features in an image, commonly known as the ‘keypoints‘ of the image. 
+SIFT is a feature detection algorithm in Computer Vision. It helps locate the local features in an image, commonly known as the ‘keypoints‘ of the image. 
 These keypoints are scale & rotation invariant that can be used for various computer vision applications, like image matching, object detection, scene detection, etc.
 
-Its process divided into the following steps:
+There are mainly four steps involved in SIFT algorithm
 
-1. Scale Space constrauction: To make sure that features are scale-independent
+1. Scale Space construction: To make sure that features are scale-independent
 2. Keypoint Localisation: Identifying the suitable features or keypoints
 3. Orientation Assignment: Ensure the keypoints are rotation invariant
 4. Keypoint Descriptor: Assign a unique fingerprint to each keypoint
+
+Additional information about SIFT can be found on David G. Lowe's paper. The information is listed in the "Reference" section.
 
 Basic Block Diagram:                                                                                                                                                  
 
@@ -38,7 +40,7 @@ Usage:
 1. Download "Image Processing" or Clone the "wireless-based-image-forgery-detection" folder to your local computer.
 2. Open the Image_forgery.py file
 3. Use your own copy-moved(forged) image or have one from the "Image" folder
-4. Plce it in the same folder with the "Image_forgery.py" file 
+4. Place it in the same folder with the "Image_forgery.py" file 
 5. Run the code
 6. The result should display with the copy-move part inside a blue squre (refer the results displayed below)
 
@@ -62,9 +64,9 @@ Figures below are the resultant image in which forged part is accurately detecte
 ************************************
 
 Conclusion: 
-In the proposed work, a SIFT algorithm is implemented to detect the copy move forgery in digital images. Proposed algorithm is tested on various images of standard 
-dataset. simulation results show that the forged region is detected accurately by using the SIFT algorithm. 
+In the proposed work, a SIFT algorithm is implemented to detect the copy move forgery in digital images. Proposed algorithm is tested on various images. And, the results show that the forged region is detected accurately by using the SIFT algorithm. 
 
-Reference:                                                                                                                                                             
+Reference:                         
+David G. Lowe "Distinctive Image Features from Scale-Invariant Keypoints”, International Journal of Computer Vision
 Copy-Move Image Forgery Detection using Scale Invariant Feature Transform-  P. Parimala, Mrs. A. Naveena                                                               
 Image used from this link - https://pixabay.com/
