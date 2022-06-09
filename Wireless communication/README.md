@@ -84,10 +84,11 @@ The results shown below are cuptured and processed using MATLAB script.
 ![alt text](/Images/packet.jpg)
 ***************************************
 
-Transmitted image:
+Transmitted image:                                                                                                                                                     
 ![alt text](/Images/(1920x1223).jpg) 
 ***************************************
-Received image:
+Received image:                                                                                                                                                        
+
 ![alt text](/Images/rx_image.jpg)
 ***************************************
 
