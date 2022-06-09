@@ -6,18 +6,20 @@ The wireless communication part of the project shows how to encode and pack an i
 and subsequently decode the packets to retrieve the image. To facilitate the wireless communictation we used two adalm pluto sdr radios for transmission 
 and reception of the waveform.
 
-Required Hardware and Software to design and implement the wireless communicaion part in MATLAB:
+The following lists are required to design and implement the wireless communicaion part in MATLAB:
 1. Communication toolbox
 2. ADALM PlutoSDR 
 3. Software communication toolbox support package for ADALM PlutoSDR
 
+Please refer the link provided in the "Reference" section about the required hardware and software installation. 
 
+***************************************
 Basic Block Diagram:
 
 ![alt text](/Images/blocks.jpg)
 
 Note: The complete block diagram can be found on the main page README file one level up from here.
-
+***************************************
 Complete system description:
 First, the Image is loaded and transmitted from a local computer (comp1) using 802.11a WLN communication on a "1 antenna" plotosdr. And the remote compter receives 
 the transmitted image using another "1 antenna" pluto sdr. Once all the transmitted wave packets are received fully, then the MATLAB design reconstract and transmit 
@@ -33,12 +35,12 @@ Note: Step 3 - the image forgery detection part described in the "Image processi
 Please refer the README file in the "image processing" folder for the copy-move detection process. Here, we are only discussing the wireless 
 communication part.
                 
-
+***************************************
 The "Wireless communication" folder contains the transmitter and receiver MATLAB code that was used for this project. 
 In addition, inside the Receiver folder there are client and server python codes. These codes are used to create a TCP/IP connection protocol between the receiver computer 2 and Raspberry Pi. 
 
 
-
+***************************************
 Transmitter Design:
 The general structure of the WLAN transmitter can be described as follows:
 
@@ -64,7 +66,7 @@ The general structure of the WLAN receiver can be described as follows:
 7. Order the decoded MSDUs based on the SequenceNumber property in the recovered MAC frame configuration object.
 8. Combine the decoded MSDUs from all the transmitted packets to form the received image
 
-
+***************************************
 USAGE:
 1. Download the "Wireless communication" folder or Clone the "wireless-based-image-forgery-detection" folder to your local computer 
 2. Connect one plutoSDR with "1 antenna" for each transmit and receive computer
@@ -73,7 +75,7 @@ USAGE:
 5. Run the transmitter "Tx_Rev1.m" MATLAB script first, and
 6. Run the Receive "Rx_Rev1.m" MATLAB script 
 7. The result should display the transmitted waveform, 64QAM constellation, and received image (refer the results displayed below)  
-
+***************************************
 TEST RESULT: 
 The results shown below are cuptured and processed using MATLAB script. 
 
