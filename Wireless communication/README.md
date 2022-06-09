@@ -3,7 +3,7 @@ Hi!
 This is an IEEE 802.11a Wireless Local Area Network (WLAN) communication for image transmission uing MATLAB
 
 The wireless communication part of the project shows how to encode and pack an image file into WLAN packets for transmission 
-and subsequently decode the packets to retrieve the image. To facilitate the wireless communictation we used two adalm pluto sdr radios for transmission 
+and subsequently decode the packets to retrieve the image. To facilitate the wireless communictation process we used two adalm pluto sdr radios for transmission 
 and reception of the waveform.
 
 The following lists are required to design and implement the wireless communicaion part in MATLAB:
