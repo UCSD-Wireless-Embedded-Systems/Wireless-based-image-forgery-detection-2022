@@ -22,7 +22,7 @@ Image Transmission flow:
 1. From computer 1 to Computer 2 (using 802.11a WLAN)
 2. From computer 2 to Raspberry Pi (using TCP/IP socket programming)
 3. Perform Image forgery detection on a Raspberry Pi (using Python) 
-4. Send the processed image back to computer 1 (using TCP/IP socket programming)
+4. Send the processed image back to computer 2 (using TCP/IP socket programming)
 
 Note: Step 3 - the image forgery detection part described in the "Image processing" folder one level up from here. 
                 
