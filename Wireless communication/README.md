@@ -20,7 +20,7 @@ Basic Block Diagram:
 
 Note: The complete block diagram can be found on the main page README file one level up from here.
 ***************************************
-Complete system description:                                                                                                                                       
+System description:                                                                                                                                       
 First, the Image is loaded and transmitted from a local computer (comp1) using 802.11a WLN communication on a "1 antenna" plotosdr. And the remote compter receives 
 the transmitted image using another "1 antenna" pluto sdr. Once all the transmitted wave packets are received fully, then the MATLAB design reconstract and transmit 
 the image to the Raspberry Pi using TCP/IP network connection. Then, the Raspberry Pi performs the image forgery detection and send the result back to the remote 
