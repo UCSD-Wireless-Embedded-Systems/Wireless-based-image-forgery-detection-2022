@@ -35,6 +35,21 @@ Python Script:
 a remote computer (comp2) and Raspberry Pi. 
 
 
+Model design Steps:
+1. Input/load an Image and convert it to Gray scale
+2. Implement Gaussian filter to the Gray scale image
+3. Create scale space 
+4. Calculate Difference of Gaussian (DOG)
+5. Calculate local-maxima and minima for key-point localization
+6. Calculate the magnitude and orientation of key-point using 8 bin histogram
+7. Extract key-points
+8. Create feature descriptors (Number of key-points, Locations (row and column) and Sift Descriptors )
+9. Match features
+10. Implement Hierarchical Agglomerative clustering
+11. Perform RANSAC algorithm for determining the geometric transformation
+12. Determine whether an image is forged or not based on the result from the matching features.
+
+
 
 Usage: 
 1. Download "Image Processing" or Clone the "wireless-based-image-forgery-detection" folder to your local computer.
