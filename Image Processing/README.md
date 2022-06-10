@@ -63,7 +63,7 @@ Figures below are the resultant image in which forged part is accurately detecte
 ![alt text](/Images/Test5.jpg)
 ************************************
 
-Conclusion: 
+Conclusion:                                                                                                                                                      
 In the proposed work, a SIFT algorithm is implemented to detect the copy move forgery in digital images. Proposed algorithm is tested on various images. And, the results show that the forged region is detected accurately by using the SIFT algorithm. 
 
 Reference:                         
