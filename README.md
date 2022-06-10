@@ -18,7 +18,8 @@ The below block diagram is showing the system interface block diagram.
 We also included the tree diagram below to help users navigate the repositary
 ![alt text](/Images/Tree_diagram.jpg)
 
-
+**********************
 Please refer the README files located in the Wireless communication, Image Processing and FPGA Implementation folder for additional project design information.
+
 
 Thank you!
