@@ -43,7 +43,6 @@ In addition, inside the Receiver folder there are client and server python codes
 
 ***************************************
 Transmitter Design steps:
-The general structure of the WLAN transmitter can be described as follows:
 
 1. Import an image from a local computer (comp1) and convert it to binary stream.
 2. Scale it down using nearest neighbor algorithm. 
@@ -55,7 +54,6 @@ The general structure of the WLAN transmitter can be described as follows:
 
 
 Receiver Design steps:
-The general structure of the WLAN receiver can be described as follows:
 
 1. Capture the transmitted wave-packets using another "1 antenna" PlutoSDR 
 2. Perform carrier frequency offset estimation and correction
